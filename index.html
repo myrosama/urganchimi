@@ -35,21 +35,120 @@
     <meta name="geo.position" content="41.5500;60.6333">
     <meta name="ICBM" content="41.5500, 60.6333">
 
-    <!-- Structured Data - School Organization -->
+    <!-- Structured Data - Educational Organization (for Google Knowledge Panel) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "School",
+        "@type": "EducationalOrganization",
+        "@id": "https://urganch1imi.uz/#organization",
         "name": "Urganch shahar 1-son ixtisoslashtirilgan maktab-internati",
-        "alternateName": ["Urganch 1-IMI", "Urganch STEM School"],
-        "description": "PIIMA tizimidagi STEM yo'nalishidagi ixtisoslashtirilgan maktab-internat",
+        "alternateName": ["Urganch 1-IMI", "Urganch STEM School", "Urganch IMI", "1-IMI"],
+        "description": "O'zbekiston Respublikasi Prezidenti huzuridagi Ixtisoslashtirilgan Ta'lim Muassasalari Agentligi (PIIMA) tizimidagi STEM yo'nalishidagi zamonaviy maktab-internat. Matematika, fizika, kimyo, informatika fanlaridan chuqur bilim beradi.",
         "url": "https://urganch1imi.uz",
-        "logo": "https://urganch1imi.uz/logo.png",
-        "foundingDate": "2022-12",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://urganch1imi.uz/piima.svg",
+            "width": "367",
+            "height": "374"
+        },
+        "image": "https://urganch1imi.uz/og-image.png",
+        "foundingDate": "2022-12-01",
+        "founder": {
+            "@type": "Organization",
+            "name": "PIIMA - Ixtisoslashtirilgan Ta'lim Muassasalari Agentligi",
+            "url": "https://portal.piima.uz"
+        },
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Urganch shahri",
             "addressLocality": "Urganch",
             "addressRegion": "Xorazm viloyati",
+            "postalCode": "220100",
+            "addressCountry": {
+                "@type": "Country",
+                "name": "O'zbekiston",
+                "alternateName": "Uzbekistan"
+            }
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "41.5500",
+            "longitude": "60.6333"
+        },
+        "telephone": "+998-62-XXX-XX-XX",
+        "email": "info@urganch1imi.uz",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+998-62-XXX-XX-XX",
+                "contactType": "customer service",
+                "areaServed": "UZ",
+                "availableLanguage": ["uz", "ru"]
+            },
+            {
+                "@type": "ContactPoint",
+                "url": "https://t.me/Urganch_IMI",
+                "contactType": "customer service",
+                "contactOption": "TollFree"
+            }
+        ],
+        "sameAs": [
+            "https://t.me/Urganch_IMI",
+            "https://instagram.com/urganch_1imi",
+            "https://portal.piima.uz"
+        ],
+        "parentOrganization": {
+            "@type": "GovernmentOrganization",
+            "name": "O'zbekiston Respublikasi Maktabgacha va Maktab Ta'limi Vazirligi",
+            "alternateName": "PIIMA"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Xorazm viloyati"
+        },
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 50,
+            "maxValue": 100
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Ta'lim Dasturlari",
+            "itemListElement": [
+                {"@type": "Course", "name": "Matematika", "description": "Olimpiada darajasidagi matematika ta'limi", "provider": {"@type": "Organization", "name": "Urganch 1-IMI"}},
+                {"@type": "Course", "name": "Fizika", "description": "Nazariy va eksperimental fizika", "provider": {"@type": "Organization", "name": "Urganch 1-IMI"}},
+                {"@type": "Course", "name": "Kimyo", "description": "Laboratoriya ishlari va kimyoviy tajribalar", "provider": {"@type": "Organization", "name": "Urganch 1-IMI"}},
+                {"@type": "Course", "name": "Informatika", "description": "Dasturlash, robototexnika, STEAM", "provider": {"@type": "Organization", "name": "Urganch 1-IMI"}},
+                {"@type": "Course", "name": "Ingliz tili", "description": "Chet tili intensiv ta'limi", "provider": {"@type": "Organization", "name": "Urganch 1-IMI"}}
+            ]
+        },
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Internat (Yotoqxona)", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Laboratoriyalar", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Sport Maydonchasi", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Kutubxona", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Oshxona", "value": true}
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - LocalBusiness (for Google Maps/Location) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://urganch1imi.uz/#localbusiness",
+        "name": "Urganch 1-IMI",
+        "description": "PIIMA tizimidagi STEM maktabi",
+        "image": "https://urganch1imi.uz/og-image.png",
+        "url": "https://urganch1imi.uz",
+        "telephone": "+998-62-XXX-XX-XX",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Urganch shahri",
+            "addressLocality": "Urganch",
+            "addressRegion": "Xorazm viloyati",
+            "postalCode": "220100",
             "addressCountry": "UZ"
         },
         "geo": {
@@ -57,33 +156,40 @@
             "latitude": "41.5500",
             "longitude": "60.6333"
         },
-        "parentOrganization": {
-            "@type": "Organization",
-            "name": "PIIMA - Ixtisoslashtirilgan Ta'lim Muassasalari Agentligi",
-            "url": "https://portal.piima.uz"
-        },
-        "sameAs": [
-            "https://t.me/Urganch_IMI",
-            "https://instagram.com/urganch_1imi"
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            }
         ],
-        "numberOfStudents": {
-            "@type": "QuantitativeValue",
-            "value": "500+"
+        "priceRange": "Bepul (Davlat maktabi)"
+    }
+    </script>
+
+    <!-- Structured Data - WebSite (for Sitelinks Search Box) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://urganch1imi.uz/#website",
+        "name": "Urganch 1-IMI",
+        "url": "https://urganch1imi.uz",
+        "description": "Urganch shahar 1-son ixtisoslashtirilgan maktab-internati rasmiy veb-sayti",
+        "publisher": {
+            "@id": "https://urganch1imi.uz/#organization"
         },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Academic Programs",
-            "itemListElement": [
-                {"@type": "Course", "name": "Matematika", "description": "Olimpiada darajasidagi matematika"},
-                {"@type": "Course", "name": "Fizika", "description": "Nazariy va amaliy fizika"},
-                {"@type": "Course", "name": "Kimyo", "description": "Laboratoriya ishlari"},
-                {"@type": "Course", "name": "Informatika", "description": "Dasturlash va STEAM"}
-            ]
+        "inLanguage": "uz",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://urganch1imi.uz/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
     }
     </script>
 
-    <!-- Structured Data - FAQ for common searches -->
+    <!-- Structured Data - FAQ (Expanded for more search visibility) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -94,7 +200,7 @@
                 "name": "Urganch 1-IMI maktabiga qanday qabul qilinadi?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Qabul portal.piima.uz orqali amalga oshiriladi. 5-6 sinf o'quvchilari matematika va fan bo'yicha imtihonlar topshirishlari kerak."
+                    "text": "Qabul portal.piima.uz orqali amalga oshiriladi. 5-6 sinf o'quvchilari matematika va fan bo'yicha imtihonlar topshirishlari kerak. Qabul har yili may-iyun oylarida o'tkaziladi."
                 }
             },
             {
@@ -102,7 +208,7 @@
                 "name": "Urganch 1-IMI qayerda joylashgan?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Maktab Xorazm viloyati, Urganch shahrida joylashgan."
+                    "text": "Maktab O'zbekiston Respublikasi, Xorazm viloyati, Urganch shahrida joylashgan. Koordinatalar: 41.5500, 60.6333"
                 }
             },
             {
@@ -110,7 +216,39 @@
                 "name": "PIIMA maktabi nima?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "PIIMA - Prezident huzuridagi Ixtisoslashtirilgan Ta'lim Muassasalari Agentligi. Bu tizim STEM yo'nalishidagi eng ilg'or maktablarni birlashtiradi."
+                    "text": "PIIMA - O'zbekiston Respublikasi Prezidenti huzuridagi Ixtisoslashtirilgan Ta'lim Muassasalari Agentligi. Bu tizim STEM (fan, texnologiya, muhandislik, matematika) yo'nalishidagi eng ilg'or maktablarni birlashtiradi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Urganch 1-IMI da qanday fanlar o'qitiladi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Maktabda matematika, fizika, kimyo, biologiya, informatika (dasturlash, robototexnika), ingliz tili va boshqa fanlar chuqur o'qitiladi. O'quvchilar respublika va xalqaro olimpiadalarga tayyorlanadi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Urganch 1-IMI da internat (yotoqxona) bormi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ha, maktab internat tizimida ishlaydi. O'quvchilar zamonaviy yotoqxonada yashaydi, kuniga 3 mahal ovqat bilan ta'minlanadi. Barcha xizmatlar bepul."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Urganch 1-IMI ga qaysi sinflardan qabul qilinadi?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Maktabga asosan 5-6 sinf o'quvchilari qabul qilinadi. Ba'zi hollarda 7-sinf o'quvchilari ham qabul qilinishi mumkin. Qabul imtihonlari matematika va tabiiy fanlardan o'tkaziladi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Urganch 1-IMI Telegram kanali qanday?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Maktabning rasmiy Telegram kanali: @Urganch_IMI. Kanalda maktab yangiliklari, tadbirlar, qabul e'lonlari va boshqa muhim ma'lumotlar e'lon qilinadi."
                 }
             }
         ]
@@ -153,7 +291,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="logo-text">
-                    <span class="logo-main">Urganch 1-IMI</span>
+                    <span class="logo-main">Urganch 1-IMI <span class="beta-tag">BETA</span></span>
                     <span class="logo-sub">Ixtisoslashtirilgan Maktab</span>
                 </div>
             </a>

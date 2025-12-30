@@ -95,6 +95,25 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    position: relative;
+}
+
+/* PIIMA Logo Background Watermark */
+body::before {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    background-image: url('piima.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* Custom Scrollbar */
@@ -267,6 +286,38 @@ img {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Beta Tag */
+.beta-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    animation: betaPulse 2s ease-in-out infinite;
+    vertical-align: middle;
+}
+
+@keyframes betaPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
 }
 
 .logo-sub {
@@ -1203,20 +1254,25 @@ img {
     overflow: hidden;
 }
 
-/* PIIMA Watermark */
+/* PIIMA Watermark in About Section */
 .piima-watermark {
     position: absolute;
     right: -5%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 35vw;
-    color: rgba(255, 255, 255, 0.03);
+    width: 50vw;
+    height: 70vh;
+    background-image: url('piima.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
     pointer-events: none;
     z-index: 0;
 }
 
 .piima-watermark i {
-    display: block;
+    display: none;
 }
 
 .about-grid {
